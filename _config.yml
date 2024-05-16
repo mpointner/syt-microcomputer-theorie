@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   This site contains frequently asked questions, article to troubleshoot common issues,
   installation tutorials, blueprints for developers, and more!
 
-baseurl: ""
+baseurl: "/syt-microcomputer-theorie"
 url: ""
 
 twitter_username: passbolt
