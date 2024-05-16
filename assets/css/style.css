@@ -4223,8 +4223,8 @@ article table.table-parameters tbody tr td em {
     color: #333;
 }
 .logo.no-img {
-    background: transparent url(../img/logo/logo.png) 0 0 no-repeat;
-    background-size: 150px auto;
+    background: transparent url(https://www.tgm.ac.at/wp-content/uploads/2022/03/cropped-tgm_logo_300dpi.jpg) 0 0 no-repeat;
+    background-size: contain;
     width: 150px;
     height: 30px;
 }
@@ -4232,8 +4232,8 @@ article table.table-parameters tbody tr td em {
     display: none;
 }
 .logo.bigger {
-    background: transparent url(../img/logo/logo.svg) 0 0 no-repeat;
-    background-size: 200px auto;
+    background: transparent url(https://www.tgm.ac.at/wp-content/uploads/2022/03/cropped-tgm_logo_300dpi.jpg) 0 0 no-repeat;
+    background-size: contain;
     width: 200px;
     height: 45px;
 }
@@ -4246,12 +4246,12 @@ only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (min-devicepixel-ratio: 1.5),
 only screen and (min-resolution: 1.5dppx) {
     .logo.no-img {
-        background: transparent url(../img/logo/logo.svg) 0 0 no-repeat;
-        background-size: 150px auto;
+        background: transparent url(https://www.tgm.ac.at/wp-content/uploads/2022/03/cropped-tgm_logo_300dpi.jpg) 0 0 no-repeat;
+        background-size: contain;
     }
     .logo.bigger {
-        background: transparent url(../img/logo/logo.svg) 0 0 no-repeat;
-        background-size: 200px auto;
+        background: transparent url(https://www.tgm.ac.at/wp-content/uploads/2022/03/cropped-tgm_logo_300dpi.jpg) 0 0 no-repeat;
+        background-size: contain;
     }
 }
 .progress-bar {
