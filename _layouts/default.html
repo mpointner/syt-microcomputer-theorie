@@ -1,40 +1,41 @@
-<!doctype html>
-<html lang="{{ site.lang | default: 'en-US' }}">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    {% seo %}
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
-    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-    {% include head-custom.html %}
-</head>
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+{% include common/head.html %}
 <body>
+<div id="container" class="help page background">
+    {% include common/header.html %}
 
-<header>
-    <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-</header>
+    <div class="panel main" aria-label="Content">
+        <div class="panel left">
+            {% include sidebar/api.html selected=page.category %}
+        </div>
+        <div class="panel middle" data-spy="scroll" data-target=".scrollspy">
+            <div class="grid grid-responsive-12">
+                <article>
+                    {% include breadcrumbs/api.html %}
 
-<div class="wrapper">
-    <nav>
-        <ul></ul>
-    </nav>
-    <section>
-        {{ content }}
+                    {% include layout/row_start.html %}
+                    {% include layout/col_start.html column="12" %}
+                    <h1>
+                        {{ page.title }}
+                        {% if page.pro %}
+                        <span class="pill">
+                          PRO
+                        </span>
+                        {% endif %}
+                    </h1>
+                    {{ content }}
+                    {% include date/updated.html %}
+                    {% include layout/col_end.html %}
 
-    </section>
-    <footer>
-        {% if site.github.is_project_page %}
-        <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></small></p>
-    </footer>
+                    {% include layout/row_end.html %}
+
+                </article>
+            </div>
+        </div>
+    </div>
+
+    {% include common/footer.html %}
 </div>
 </body>
 </html>

@@ -1,0 +1,154 @@
+
+- title: Start
+  slug: start
+  url: /
+- title: Introduction
+  slug: introduction
+  url: /introduction
+- title: Authentication
+  slug: authentication
+  url: /authentication
+- title: Resources
+  slug: resources
+  url: /resources
+  data:
+    - title: Index
+      slug: resources-read-index
+      url: /resources/read-index
+    - title: Read
+      slug: resources-read
+      url: /resources/read
+    - title: Create
+      slug: resources-create
+      url: /resources/create
+    - title: Update
+      slug: resources-update
+      url: /resources/update
+    - title: Delete
+      slug: resources-delete
+      url: /resources/delete
+    - title: Share
+      slug: resources-share
+      url: /resources/share
+    - title: Move
+      slug: resources-move
+      url: /resources/move
+- title: Resources Types
+  slug: resource-types
+  url: /resource-types
+  data:
+    - title: Index
+      slug: resources-read-index
+      url: /resource-types/read-index
+    - title: Read
+      slug: resources-read
+      url: /resource-types/read
+- title: Secrets
+  slug: secrets
+  url: /secrets
+- title: Permissions
+  slug: permissions
+  url: /permissions
+  data:
+    - title: Read
+      slug: permissions-read
+      url: /permissions/read
+- title: Users
+  slug: users
+  url: /users
+  data:
+    - title: Index
+      slug: users-read-index
+      url: /users/read-index
+    - title: Read
+      slug: users-read
+      url: /users/read
+    - title: Create
+      slug: users-create
+      url: /users/create
+    - title: Update
+      slug: users-update
+      url: /users/update
+    - title: Delete
+      slug: users-delete
+      url: /users/delete
+- title: Groups
+  slug: groups
+  url: /groups
+  data:
+    - title: Index
+      slug: groups-read-index
+      url: /groups/read-index
+    - title: Read
+      slug: groups-read
+      url: /groups/read
+    - title: Create
+      slug: groups-create
+      url: /groups/create
+    - title: Update
+      slug: groups-update
+      url: /groups/update
+    - title: Delete
+      slug: groups-delete
+      url: /groups/delete
+- title: OpenPGP Keys
+  slug: gpgkeys
+  url: /gpgkeys
+  data:
+    - title: Index
+      slug: gpgkeys-read-index
+      url: /gpgkeys/read-index
+    - title: Read
+      slug: grgpgkeysoups-read
+      url: /gpgkeys/read
+- title: Comments
+  slug: comments
+  url: /comments
+  data:
+    - title: Index
+      slug: comments-read-index
+      url: /comments/read-index
+    - title: Create
+      slug: comments-create
+      url: /comments/create
+    - title: Update
+      slug: comments-update
+      url: /comments/update
+    - title: Delete
+      slug: comments-delete
+      url: /comments/delete
+- title: Favorites
+  slug: favorites
+  url: /favorites
+  data:
+    - title: Create
+      slug: favorites-create
+      url: /favorites/create
+    - title: Delete
+      slug: favorites-delete
+      url: /favorites/delete
+- title: Folders
+  slug: folders
+  url: /folders
+  data:
+   - title: Index
+     slug: folders-read-index
+     url: /folders/read-index
+   - title: Read
+     slug: folders-read
+     url: /folders/read
+   - title: Create
+     slug: folders-create
+     url: /folders/create
+   - title: Update
+     slug: folders-update
+     url: /folders/update
+   - title: Delete
+     slug: folders-delete
+     url: /folders/delete
+   - title: Share
+     slug: folders-share
+     url: /folders/share
+   - title: Move
+     slug: folders-move
+     url: /folders/move

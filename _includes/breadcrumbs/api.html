@@ -1,0 +1,28 @@
+<div class="row" id="introduction">
+    <div class="col12">
+        <div class="breadcrumbs">
+            <ul>
+                <li>
+                    <div class="main-cell">
+                        <a href="/"><span>home</span></a>
+                    </div>
+                </li>
+                {% assign categories = page.category | split: "," %}
+                {% if categories[0] %}
+                <li>
+                    <div class="main-cell">
+                        <a href="{{ absolute_url }}/{{ categories[0] }}"><span>{{ categories[0] }}</span></a>
+                    </div>
+                </li>
+                {% endif %}
+                {% if categories[1] %}
+                <li>
+                    <div class="main-cell">
+                        <a href="{{ page.url | absolute_url }}"><span>{{ categories[1] }}</span></a>
+                    </div>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</div>
